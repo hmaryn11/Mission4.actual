@@ -11,47 +11,60 @@ $("#buttonCalc").click(function () {
     var final = $("#final").val();
     var intex = $("#intex").val();
 
-    finalNum = ((assign * .5) + (gp * .1) + (quiz * .1) + (mid * .1) + (final * .1) + (intex * .1)) * 100
+ // var text = "Assign: " + assign + ", GP: " + gp + ", Quiz: " + quiz + ", Mid: " + mid + ", Final: " + final + ", Intex: " + intex;
 
+    finalNum = ((assign * .5) + (gp * .1) + (quiz * .1) + (mid * .1) + (final * .1) + (intex * .1));
 
-    if (finalNum >= 94) {
+    if (finalNum >= 94)
+    {
         finalLet = "A"
     }
-    else if (finalNum >= 90) {
+    else if (finalNum >= 90)
+    {
         finalLet = "A-"
     }
-    else if (finalNum >= 87) {
+    else if (finalNum >= 87)
+    {
         finalLet = "B+"
     }
-    else if (finalNum >= 84) {
+    else if (finalNum >= 84)
+    {
         finalLet = "B"
     }
-    else if (finalNum >= 80) {
+    else if (finalNum >= 80)
+    {
         finalLet = "B-"
     }
-    else if (finalNum >= 77) {
+    else if (finalNum >= 77)
+    {
         finalLet = "C+"
     }
-    else if (finalNum >= 74) {
+    else if (finalNum >= 74)
+    {
         finalLet = "C"
     }
-    else if (finalNum >= 70) {
+    else if (finalNum >= 70)
+    {
         finalLet = "C-"
     }
-    else if (finalNum >= 67) {
+    else if (finalNum >= 67)
+    {
         finalLet = "D+"
     }
-    else if (finalNum >= 64) {
+    else if (finalNum >= 64)
+    {
         finalLet = "D"
     }
-    else if (finalNum >= 60) {
+    else if (finalNum >= 60)
+    {
         finalLet = "D-"
     }
-    else {
+    else
+    {
         finalLet = "E"
     }
 
-    var text = document.createTextNode("Your grade in this class is " + finalLet + ".")
-    $('#finalGrade').appendChild(text)
-})
+    var text = "Your grade in this class is " + finalLet + "."
 
+   $("#finalGrade").text(text);
+})
