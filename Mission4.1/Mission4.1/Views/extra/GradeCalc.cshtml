@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator!!!";
+}
+@* Tell the program which model you are wanting to use *@
+@model GradeCalcModel;
+
+<h2>Grade Calculator</h2>
+<h3>
+    Please enter the grade percentage that you received <br />
+    for each category of grading in this class.
+</h3>
+
+<form method="post">
+  @* Inputs for grade percentages *@
+    <label>Assignments</label><br />
+    <input id="assign" asp-for="ClsAssign" type="number" /> % <br />
+    <label>Group Project</label> <br />
+    <input id="gp" asp-for="ClsGp" type="number" /> % <br />
+    <label>Quizzes</label> <br />
+    <input id="quiz" asp-for="ClsQuiz" type="number" /> %<br />
+    <label>Midterm Exam</label><br />
+    <input id="mid" asp-for="ClsMid" type="number" /> %<br />
+    <label>Final Exam</label> <br />
+    <input id="final" asp-for="ClsFinal" type="number" /> % <br />
+    <label>INTEX</label><br />
+    <input id="intex" asp-for="ClsIntex" type="number" /> % <br /><br />
+    <input id="buttonCalc" type="submit" value="Calculate Grade" /> <br /><br />
+    @* a label where the final letter grade message will be printed *@
+    <label id="finalGrade"></label>
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<script src="~/wwwroot/js/GradeCalc.js" type="text/javascript"></script>

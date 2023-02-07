@@ -1,63 +1,28 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@* Here the "Title" variable is being declared along with any other variable you want to make dynamic >>*@
 @{
+    ViewData["Title"] = "Maryn's Dreams";
 }
 
-<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>This One's For Maryn</title>
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="img/good-icon.webp" />
-</head>
-<body>
-    <h1>Maryn</h1>
-    <div>
-        <p>This is me and my husband in the mountains freezing our tails off.</p>
-        <img src="img/DSC_5942.jpg" style="height: 300px">
-        <p>
-            I hope to be more fluent in C# and ASP.NET <br />
-            than any other language we have learned so far.<br />
-            I feel like I have not put as much effort into <br />
-            learning Python and JavaScript, but I want to repent <br />
-            by putting a lot of effort into learning and practicing<br />
-            the skills we learn in this class.
-        </p>
-        <h2>My Top 3 Job Picks</h2>
-        <ol>
-            <li>Software Developer</li>
-            <li>Database Engineer</li>
-            <li>Cyber Security White Hat Hacker</li>
-        </ol>
-        <form method="get">
-            <h2>Grade Calculator</h2>
-            <h3>
-                Please enter the grade percentage that you received <br />
-                for each category of grading in this class.
-            </h3>
-            <label>Assignments</label><br />
-            <input id="assign" name="assign" type="number" /> % <br />
-            <label>Group Project</label> <br />
-            <input id="gp" name="gp" type="number" /> % <br />
-            <label>Quizzes</label> <br />
-            <input id="quiz" name="quiz" type="number" /> %<br />
-            <label>Midterm Exam</label><br />
-            <input id="mid" name="mid" type="number" /> %<br />
-            <label>Final Exam</label> <br />
-            <input id="final" name="final" type="number" /> % <br />
-            <label>INTEX</label><br />
-            <input id="intex" name="intex" type="number" /> % <br /><br />
-            <input id="buttonCalc" type="button" value="Calculate Grade" /> <br /><br />
-            <label id="finalGrade"></label>
-        </form>
-    </div>
+<h1>Maryn</h1>
+<p>This is me and my husband in the mountains freezing our tails off.</p>
+<img src="img/DSC_5942.jpg" style="height: 300px">
+<p>
+    I hope to be more fluent in C# and ASP.NET <br />
+    than any other language we have learned so far.<br />
+    I have not put as much effort into learning Python <br />
+    and JavaScript, but I want to repent by putting a <br />
+    lot of effort into learning and practicing<br />
+    the skills we learn in this class.
+</p>
+<h2>My Top 3 Job Picks</h2>
+<ol>
+    <li>Software Developer</li>
+    <li>Database Engineer</li>
+    <li>Cyber Security White Hat Hacker</li>
+</ol>
 
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="js/GradeCalc.js"></script>
-</body>
-</html>
+

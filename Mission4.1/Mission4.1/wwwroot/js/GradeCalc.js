@@ -66,5 +66,5 @@ $("#buttonCalc").click(function () {
 
     var text = "Your grade in this class is " + finalLet + "."
 
-   $("#finalGrade").text(text);
+    $("#finalGrade").text(text);
 })
